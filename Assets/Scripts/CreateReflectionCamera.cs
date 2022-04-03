@@ -75,10 +75,8 @@ public class CreateReflectionCamera : MonoBehaviour
         lpos = Vector3.Reflect(lpos, Vector3.up);
 
         ldir = Vector3.Reflect(ldir, Vector3.up);
-        //ldir = Vector3.Reflect(ldir, Vector3.right);
 
         lup = Vector3.Reflect(lup, Vector3.up);
-        //lup = Vector3.Reflect(lup, Vector3.right);
 
         pos = _Plane.transform.TransformPoint(lpos);
         dir = _Plane.transform.TransformDirection(ldir);
